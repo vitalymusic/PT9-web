@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Jaunā lapa ar HTML</h1>
+    </header>
+    <nav></nav>
+    <main>
+        <h1>Tabulas</h1>
+        <table style="width:100%;">
+            <thead>
+                <tr>
+                    <td>Vārds uzvārds</td>
+                    <td>Epasts</td>
+                    <td>Darbības</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Anna</td>
+                    <td>anna@inbox.lv</td>
+                    <td>
+                        <button>Redigēt</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jānis</td>
+                    <td>janis@inbox.lv</td>
+                    <td>
+                        <button>Redigēt</button>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Lietotāju kopā:</td>
+                    <td rowspan="2">2</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Lietotāju kopā:</td>
+                    <!-- <td>2</td> -->
+                </tr>
+            </tfoot>
+        </table>
+
+        <h1>Formas</h1>
+
+        <form action="https://httpbin.org/post" method="POST">
+            
+            <fieldset>
+                <legend>Dati par lietotāju</legend>
+                <label for="fname">Jūsu vārds:</label>
+                <input type="text" name="fname" id="fname">
+                <label for="email">Jūsu epasts:</label>
+                <input type="email" name="email" id="email">
+                <label for="password">Parole:</label>
+                <input type="password" name="password" id="password">
+                <h3>Jautājums</h3>
+                <p>Izvēlies vienu no atbildēm</p>
+                    <input type="radio" name="jaut1" id="var1" value="atbilde1">
+                    <label for="var1">Pirmais variants</label>
+                    <br>
+                    <input type="radio" name="jaut1" id="var2" value="atbilde2">
+                    <label for="var2">Otrais variants</label>
+                    <br>
+                    <input type="radio" name="jaut1" id="var3" value="atbilde3">
+                    <label for="var3">Trešais variants</label>
+            </fieldset>
+
+            <fieldset>
+                <select name="car[]" id="car" multiple>
+                    <optgroup label="Good cars">
+                        <option value="0">BMW</option>
+                        <option value="1">AUDI</option>
+                        <option value="2">Mercedes</option>
+                    </optgroup>
+                </select>
+
+
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+
+                <input type="file" name="photo" id="" accept="image/*">
+
+                <input type="color" name="" id="">
+                <input type="number" name="" id="" min="0" max="100" step="5">
+
+                <input type="checkbox" name="" id="" value="">
+
+
+                <button type="submit">Reģistrēties</button>
+
+
+            </fieldset>
+
+
+
+
+        </form>
+
+
+    </main>
+    <footer></footer>
+</body>
+</html>
