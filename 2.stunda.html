@@ -12,7 +12,7 @@
    <link rel="stylesheet" href="style.css">
 
    <style>
-    
+
 
    </style>
 
@@ -20,12 +20,15 @@
 </head>
 <body>
     <header>
-        <h1>Jaunā lapa ar HTML</h1>
+        <div>
+            <h1>Jaunā lapa ar HTML</h1>
+        </div>
+        
     </header>
     <nav></nav>
     <main>
         <h1>Tabulas</h1>
-        <table style="width:100%;">
+        <table style="width:100%;" id="tabula1">
             <thead>
                 <tr>
                     <td>Vārds uzvārds</td>
@@ -65,7 +68,7 @@
 
         <form action="https://httpbin.org/post" method="POST">
             
-            <fieldset>
+            <fieldset class="pirmais">
                 <legend>Dati par lietotāju</legend>
                 <label for="fname">Jūsu vārds:</label>
                 <input type="text" name="fname" id="fname">
@@ -85,7 +88,7 @@
                     <label for="var3">Trešais variants</label>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="otrais">
                 <select name="car[]" id="car" multiple>
                     <optgroup label="Good cars">
                         <option value="0">BMW</option>
@@ -117,6 +120,8 @@
 
 
     </main>
-    <footer></footer>
+    <footer>
+        <nav></nav>
+    </footer>
 </body>
 </html>

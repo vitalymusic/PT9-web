@@ -1,4 +1,83 @@
 /* 1. Selektori */
 
 
-header
+header{
+
+}
+header,footer{
+
+}
+
+fieldset{
+    /* atlasa visus vienādus elementus */
+}
+
+fieldset.pirmais{
+    
+}
+fieldset.otrais{
+
+}
+#tabula1{
+
+}
+
+header h1{
+
+}
+
+header + nav{
+
+}
+
+footer nav{
+
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+
+}
+
+
+/* Defoltās vērtības visiem elementiem */
+
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+
+/* Box Modelis */
+
+header{
+    background: #f50303;
+    color:#fff;
+    /* width: 300px; */
+    max-width: 500px;
+    height: 150px;
+    padding:20px;
+    padding: 30px 50px;
+    padding: 10px 20px 30px 40px;
+    padding-left: 20px !important;
+    padding: 30px 50px;
+    border: 5px solid #02a4bd;
+    border-bottom-color:black;
+    border-style: dotted;
+    border-radius: 30px;
+    border-radius: 30px 30px 0px 0px;
+    /* border-radius: 50%; */
+    margin:30px;
+    margin: 20px auto;
+    /* box-sizing: border-box; */
+}
+
+header + nav{
+    height: 45px;
+    background-color: black;
+    color:white;
+}
+
