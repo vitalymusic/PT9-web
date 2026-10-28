@@ -81,3 +81,28 @@ header + nav{
     color:white;
 }
 
+
+main{
+    max-width:1000px;
+    margin:auto;
+}
+
+main h1{
+    margin:20px 0px;
+    text-align: center;
+}
+
+#tabula1,#tabula1 tr,#tabula1 td{
+    border:1px solid #262626b3;
+    border-collapse: collapse;
+
+}
+
+#tabula1 td{
+    padding: 3px 5px;
+}
+
+thead{
+    background-color: #74ecfe;
+}
+
