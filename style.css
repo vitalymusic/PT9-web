@@ -110,7 +110,8 @@ form{
     border:1px solid grey;
     padding: 10px;
     border-radius: 10px;
-}
+    margin-bottom:20px;
+}   
 
 fieldset{
     padding: 10px;
@@ -145,4 +146,15 @@ button{
     padding:5px 10px;
     border:1px solid grey;
     border-radius: 5px;
+}
+
+button:hover{
+    background-color: rgb(216, 215, 215);
+}
+
+
+footer{
+    background-color: black;
+    color:white;
+    height: 100px;
 }
